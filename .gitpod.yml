@@ -1,0 +1,12 @@
+image: leanprovercommunity/mathlib:gitpod
+
+vscode:
+  extensions:
+    - jroesch.lean
+    - tamasfe.even-better-toml
+
+tasks:
+  - command: |
+    . /home/gitpod/.profile && \
+    leanpkg configure && \
+    leanproject get-mathlib-cache
